@@ -37,6 +37,46 @@ async function index() {
 
     // GUI.hideItems();
 
+    GUI.addYear(2026, 'publications');
+    GUI.addPublication(
+        {
+            href: 'https://deepmind.google/research/publications/118955/',
+            html: `<h1>A moral Turing test: How belief and source shape detection of and agreement with LLM judgments</h1>
+                        <h2><b>Garcia, B.</b>, Qian, C., & Palminteri, S. </h2>
+                        <h3><b>PLoS ONE</b></h3>`
+        }
+    );
+    GUI.addPublication(
+        {
+            href: 'https://www.nature.com/articles/s41467-026-72644-w',
+            html: `<h1>Context induces distortions in value representations: a test across multiple elicitation
+                        methods</h1>
+                        <h2>Soukupova, M., <b>Garcia, B.</b>, & Palminteri, S. </h2>
+                        <h3><b>Nature Communications</b></h3>`
+        }
+    );
+    GUI.addPublication(
+        {
+            href: 'https://assets-eu.researchsquare.com/files/rs-9140831/v1_covered_e3c76d74-24be-48da-bdcf-cb623af7e34d.pdf',
+            html: `<h1>Biased yet flexible weighting of perceptual and value information during
+                        decision-making</h1>
+                        <h2><b>Garcia, B.</b>, Wyart, V., & Bavelier, D. </h2>
+                        <h3><b>Nature Communications</b></h3>`,
+            tag: 'under review'
+        }
+    );
+
+    GUI.addYear(2025, 'publications');
+    GUI.addPublication(
+        {
+            href: 'https://ccneuro.org/',
+            html: `<h1>Experiential value neglect is robust to changes in learning architecture and nature of
+                        outcomes</h1>
+                        <h2>Pioger, C., <b>Garcia, B.</b>, & Palminteri, S. </h2>
+                        <h3><b>Cognitive Computational Neuroscience (CCN)</b></h3>`
+        }
+    );
+
     GUI.addYear(2023, 'publications');
     GUI.addPublication(
         {
