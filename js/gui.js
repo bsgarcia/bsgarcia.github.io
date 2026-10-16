@@ -60,7 +60,7 @@ export class GUI {
     static addYear(year, divId) {
         // equivalent of the above line but in pure javascript
         document.querySelector(`#${divId}`).innerHTML +=
-            `<b style="font-size: 15px; margin-bottom: 1px; border-bottom: 1px #3b9b6d solid">${year}</b>`;
+            `<div class="year">${year}</div>`;
     }
     static addPublication({ href, html, tag} = {}) {
         if (tag === 'under review') {

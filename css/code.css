@@ -529,7 +529,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 body {
     /* font: 400 14px/1.1 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     background-color: #fafafa;
     -webkit-text-size-adjust: 100%;
@@ -1619,20 +1619,47 @@ a.btn-primary:visited {
 
 
 .post {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 6px 0;
+    padding: 12px 20px;
     border-radius: 1em;
     background-color: #fff;
     font-size: 70%;
 }
 
-.post:hover {
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 1em;
+.post[onclick]:hover {
     background-color: #FAFAFA;
     transition: linear 100ms;
     cursor: pointer;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 28px 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    color: #555;
+}
+
+.year::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e3e3e3;
+}
+
+.venue {
+    font-size: 12px;
+    color: #666;
+    margin: 2px 0 2px 20px;
+}
+
+.note {
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
 }
 
 .post-action {
@@ -1696,5 +1723,33 @@ a.btn-primary:visited {
     .comment {
         margin: 20px 0px 20px 0;
         padding: 0 0 0 10px;
+    }
+}
+
+/* Phone layout: tighter header, full-width entries, larger publication text */
+@media screen and (max-width: 600px) {
+    .site-header {
+        min-height: 0;
+    }
+
+    .site-title, .link {
+        line-height: 80px !important;
+    }
+
+    .post {
+        padding: 10px 0;
+        font-size: 90%;
+    }
+
+    .site-header .filter-green {
+        padding-top: 22px;
+    }
+
+    .post .tag {
+        margin-right: 0;
+    }
+
+    .venue {
+        margin-left: 0;
     }
 }
